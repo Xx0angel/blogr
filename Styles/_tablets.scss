@@ -1,0 +1,181 @@
+$break__point: 1280px;
+
+@media (max-width: $break__point) {
+    // ** Button style ** //
+
+    .button {
+        color: $white;
+        background: linear-gradient(90deg, $very__light-redbg, $light__redbg);
+    }
+
+    // ** Navigation section ** //
+
+    .nav {
+        .logo__mobile {
+            display: flex;
+            z-index: 12;
+            position: relative;
+            .menu.show {
+                display: none;
+                @include transition;
+            }
+        }
+        .about__company {
+            width: 100%;
+            .about__box {
+                width: 90%;
+                margin: 0 auto;
+                .about__title {
+                    font-size: 2em;
+                }
+            }
+        }
+        .nav__box {
+            display: block;
+            position: absolute;
+            top: 120px;
+            left: 5%;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: $white;
+            height: 50vh;
+            padding: 1.5rem 0;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            transition: all cubic-bezier(0.5, 0.09, 0.58, 1.2) 0.7s;
+            -webkit-transition: all cubic-bezier(0.5, 0.09, 0.58, 1.2) 0.7s;
+            -moz-transition: all cubic-bezier(0.5, 0.09, 0.58, 1.2) 0.7s;
+            -ms-transition: all cubic-bezier(0.5, 0.09, 0.58, 1.2) 0.7s;
+            -o-transition: all cubic-bezier(0.5, 0.09, 0.58, 1.2) 0.7s;
+
+            transform: translateX(150%);
+            -webkit-transform: translateX(150%);
+            -moz-transform: translateX(150%);
+            -ms-transform: translateX(150%);
+            -o-transform: translateX(150%);
+            .nav__container {
+                flex-direction: column;
+
+                .nav__logo {
+                    display: none;
+                }
+                .nav__link {
+                    margin-right: 0;
+                    margin-bottom: 1rem;
+                    color: #000000;
+                    &:hover {
+                        color: #000000;
+                    }
+                    &::after {
+                        background-image: url(../images/icon-arrow-dark.svg);
+                    }
+                }
+            }
+        }
+        .showed__mobile {
+            display: block;
+            transform: translateX(0%);
+            -webkit-transform: translateX(0%);
+            -moz-transform: translateX(0%);
+            -ms-transform: translateX(0%);
+            -o-transform: translateX(0%);
+        }
+    }
+
+    // ** Logged styles ** //
+
+    .logged__box {
+        button {
+            display: block;
+            margin: 0 auto;
+        }
+        button:nth-child(1) {
+            background: transparent;
+
+            color: $grayish__blue;
+        }
+    }
+
+    .about__cta {
+        button:nth-child(1) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    // ** Menu Dropdown ** //
+
+    .menu__dropdown {
+        height: auto;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        .nav__dropdown {
+            display: none;
+            padding: 1rem 0;
+            width: 100%;
+            overflow: hidden;
+            .nav__dropdown-list {
+                width: 100%;
+                padding: 0 30px;
+                margin: 0 auto;
+                background-color: $grayish__blue;
+                position: relative;
+                .nav__dropdown-item {
+                    .nav__dropdown-link {
+                        color: $very__dark-grayishblue;
+                    }
+                }
+            }
+        }
+
+        .showed {
+            display: block;
+        }
+    }
+
+    // ** Editor section ** //
+
+    .editor__box {
+        .editor__img-box {
+            max-width: 925px;
+            top: 100px;
+            right: -350px;
+            .editor__img {
+                width: 80%;
+            }
+        }
+    }
+
+    // ** Banner Section ** //
+
+    .banner {
+        .banner__phones {
+            max-width: 50%;
+            .banner__phones-img {
+                width: 100%;
+            }
+        }
+        .banner__content {
+            .banner__circles {
+                max-width: 100%;
+                .banner__circles-img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // ** Laptop section ** //
+
+    .laptop {
+        .laptop__img-box {
+            max-width: 80%;
+            .laptop__img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,139 @@
+@media (max-width: 600px) {
+
+    // ** Navigation section ** //
+    
+
+    .nav {
+        .pattern__intro {
+            img {
+                top: -300px;
+                left: -400px;
+                width: 1324px;
+            }
+        }
+    }
+
+    // ** Editor section ** // 
+
+    .editor__box {
+        .editor__title {
+            margin-bottom: 1rem;
+            font-size: 1.5em;
+        }
+        .editor__img-box {
+            position: relative;
+            top: 0;
+            right: 0;
+            .editor__img {
+                width: 100%;
+            }
+        }
+        .editor__flex {
+            .editor__text-box {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    // ** Banner section ** // 
+
+    .banner {
+        display:flex;
+        position: relative;
+        min-height: 800px;
+        overflow: visible;
+        .banner__phones {
+            position: absolute;
+            top: 0px;
+            max-width: 100%;
+        }
+        .banner__content {
+            min-height: 600px;
+            flex-direction: column;
+            padding: 3rem 1rem; 
+            .banner__circles {
+                position: absolute;
+                left: 0px;
+                top: -150px;
+            }
+            .banner__bg {
+                width: 90%;
+                .banner__bg-box{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    // ** Laptop section ** //
+    .laptop {
+        display: block;
+        .laptop__img-box {
+            position: relative;
+            left: 0px;
+            top: 0px;
+            max-width: 100%;
+            .laptop__img{
+                width: 100%;
+            }
+        }
+        
+        .laptop__description {
+            .laptop__description-box{
+                width: 100%;
+            }
+        }
+    }
+    // ** Laptop section End ** //
+
+    // ** Footer section ** //
+    .footer {
+        width: 100%;
+        min-height: 360px;
+        
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+        .footer__content {
+            width: 90%;
+            display: block;
+            text-align: center;
+            // margin: 0 auto;
+            // display: flex;
+            // justify-content: space-evenly;
+            // padding: 2rem 0 0 0;
+            // flex-wrap: wrap;
+            .footer__logo {
+                height: 50px;
+                margin: 0 0 2rem 0;
+            }
+            .footer__lists {
+                // display: flex;
+                // flex-wrap: wrap;
+                // justify-content: space-around;
+                display: block;
+                
+                .footer__list-box {
+                    width: 100px;
+                    
+                    display: block;
+                    margin: 0 auto 2rem auto;
+                    .footer__list-title {
+                        font-family: $ubuntu__font;
+                    }
+                    .footer__list {
+                        .footer__list-item {
+                            padding: 0.5rem 0;
+                            .footer__list-link {
+                                font-family: $overpass__font;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // ** Footer section End ** // 
+}
